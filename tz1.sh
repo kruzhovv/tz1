@@ -22,7 +22,7 @@ if [ -d $IN_DIR ]; then
   fi
   
 #проходим по всем файлам
-for FILE in $(find $IN_DIR -type f -name "*.txt")
+for FILE in $(find $IN_DIR -type f)
 do
 COUNT=$((COUNT+1))
 FILENAME="${FILE##*/}"
